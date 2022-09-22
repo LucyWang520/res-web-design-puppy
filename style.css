@@ -1,0 +1,268 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+/* style and color for "something about puppies" */
+h1.title {
+  font-family: Bradley Hand;
+  font-size: 42px;
+  color: black;
+}
+
+/* style and color for "fun fact" */
+h2.funFact{
+  font-family: courier;
+  font-size: 26px;
+  color: #E8F6F3;
+}
+
+/* style and color for "The puppy!" */
+h1 {
+  font-family: Comic Sans MS;
+  font-size: 30px;
+  color: black;
+}
+
+/* style and color for title description */
+p.title{
+  font-family: Bradley Hand;
+  font-size: 20px;
+  color: #EC7063;
+}
+
+/* style and color for paragraph of puppy description */
+p.desc{
+  font-family: Comic Sans MS;
+  font-size: 18px;
+  color: #5D6D7E;
+}
+
+/* style and color for paragraph of puppy picture */
+p.pic{
+  font-family: Comic Sans MS;
+  font-size: 20px;
+  color: #1F618D;
+}
+
+/* style and color of paragraph of size */
+p.size{
+  font-family: Comic Sans MS;
+  font-size: 20px;
+  color: white;
+}
+
+/* style and color of paragraph of resize */
+p.resize{
+  font-family: Comic Sans MS;
+  font-size: 16px;
+  color: black;
+}
+
+/* style and color for title "picture" */
+h1.pic{
+  font-family: Comic Sans MS;
+  font-size: 30px;
+  color: black;
+}
+
+/* style and color of "size&resize" title */
+h1.size{
+  font-family: Comic Sans MS;
+  font-size: 30px;
+  color: black;
+}
+
+/* puppy image size */
+img.picture {
+  width: 40%;
+  height: auto;
+}
+
+/* sample image phone resize */
+img.phone{
+  width: 9%;
+  height: auto;
+}
+
+/* sample image tablet resize */
+img.tablet{
+  width: 11%;
+  height: auto;
+}
+
+/* sample image desktop resize */
+img.desktop{
+  width: 22%;
+  height: auto;
+}
+
+.about ul{
+  list-style-type: square;
+  margin: 0;
+  padding: 20;
+}
+
+/* style and color use for the destop and phone screen */
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* using in class start with "col-" */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* style and color of html */
+html {
+  font-family: "courier", sans-serif;
+}
+
+/* style and coloe of header */
+.header {
+  background-color: #0E6655;
+  color: #ffffff;
+  padding: 15px;
+}
+
+/* style and coloe of menu ul */
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* style and coloe of menu li */
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #17A589;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* style and coloe of menu ul hover */
+.menu li:hover {
+  background-color: #A2D9CE;
+}
+
+/* style and coloe of about */
+.about {
+  background-color: #E67E22;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* style and coloe of picture */
+.picture{
+  background-color: #CCD1D1;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* style and coloe of footer */
+.footer {
+  background-color: #AF7AC5;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* style and coloe of sample */
+.sample{
+  background-color: #CCD1D1;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+  
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+
+/* other project button color and style */
+button.otherP {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #E5A554;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-family: Bradley Hand;
+}
+
+/* other project button hover color and style */
+button.otherP:hover {
+  background-color: #FDC379;
+  color: white;
+}
+
+/* example button color and style */
+button.example {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #D26B61;
+  padding: 7px 10px;
+  font-size: 14px;
+  font-family: Bradley Hand;
+}
+
+/* example button hover color and style */
+button.example:hover {
+  background-color: #EC7063;
+  color: white;
+}
